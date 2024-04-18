@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "practice/step_defs",
         dryRun = false,
-        tags = "@nbaNav ",
+        tags = "@google ",
         monochrome = true,
         publish = false
 )

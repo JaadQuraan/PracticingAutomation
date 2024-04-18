@@ -23,4 +23,3 @@ public class ConfigurationReader {
        return properties.getProperty(keyName);
    }
 }
-//This class is reading from configuration.properties file. When we call this method its going to use this static block called in the beginning and return the value of it

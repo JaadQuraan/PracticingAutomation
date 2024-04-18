@@ -18,11 +18,9 @@ public class Driver {
 
     /*
     making driver instance private
-    static - run before everything else and also use in static method
+
      */
 
-    // private static WebDriver driver;
-    // implement threadLocal to achieve multi thread locally
     private static InheritableThreadLocal <WebDriver> driverPool = new InheritableThreadLocal<>();
     private static WebDriver driver;
     private static ChromeOptions chromeOptions = new ChromeOptions();
@@ -41,7 +39,6 @@ public class Driver {
         if(driverPool.get()==null){
             String browserType = ConfigurationReader.getProperty("browser");
             switch (browserType.toLowerCase()){
-                //regular chrome driver
                 case "chrome":
                     WebDriverManager.chromedriver().clearDriverCache().setup();
                     //Can call driver executable file

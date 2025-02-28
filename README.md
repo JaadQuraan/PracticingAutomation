@@ -12,4 +12,4 @@ Features
 Automated test case creation and execution.
 Implementation of the Page Object Model for maintainable and reusable code.
 Integration with Maven for easy project build and dependency management.
-Use of Cucumber to define test cases in a human-readable format.
+Use of Cucumber to define test cases.
